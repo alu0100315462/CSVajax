@@ -9,7 +9,7 @@ suite('CSV', function() {
       }
     });
     test('Test de tabla con un solo un elemento', function() {
-        original.value = "prueba1;
+        original.value = "prueba1";
         calculate();
         assert.deepEqual(finaltable.innerHTML, '<table class="table table-bordered">\n<tbody><tr><td>1prueba1</td></tr>\n</tbody></table>')
     });
