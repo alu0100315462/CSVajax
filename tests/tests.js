@@ -20,4 +20,8 @@ suite('CSV', function() {
         assert.deepEqual(finaltable.innerHTML, '<p>\n</p><table class="center" id="result">\n<tbody><tr>                    <td>el libro de O"Reilly</td>                                  <td>el numero 7</td>                                  <td>2</td>                                  <td>el numero 7,2</td>                                  <td>frase con , comas, en medio</td>              </tr>\n</tbody></table>')
     });
 
+   test('Prueba almacenamiento web local', function(){
+      if (window.localStorage)
+      assert.deepEqual(localStorage.original, 'el libro de O\"Reilly,el numero 7,2,"el numero 7,2","frase con , comas, en medio"');
+    });
 });
