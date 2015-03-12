@@ -14,4 +14,10 @@ suite('CSV', function() {
         assert.deepEqual(finaltable.innerHTML, '<p>\n</p><table class="center" id="result">\n<tbody><tr>                    <td>prueba1</td>              </tr>\n</tbody></table>')
     });
 
+    test('Test con varios elementos, comillas escapadas y comas entre comillas', function() {
+        original.value = 'el libro de O\"Reilly,el numero 7,2,"el numero 7,2","frase con , comas, en medio"';
+        calculate();
+        assert.deepEqual(finaltable.innerHTML, '<p><table class="center" id="result"><tbody><tr><td>el libro de O"Reilly</td><td>el numero 7</td><td>2</td><td>el numero 7,2</td><td>frase con , comas, en medio</td></tr></tbody></table></p>')
+    });
+
 });
