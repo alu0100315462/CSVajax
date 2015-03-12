@@ -8,8 +8,14 @@
   </head>
   <body>
     <div id="mocha"></div>
-    <input id="original" placeholder="32F" size="50">
-    <span class="output" id="converted"></span>
+    <table>
+      <tr>
+        <td><textarea autofocus cols = "50" rows = "5" id="original"></textarea></td>
+      </tr>
+      </table>
+      <button type="button" class="btn btn-primary" role="button">Generate table</button><br>
+      <span class="output" id="finaltable"></span>
+    </table>
 
     <script src="chai.js"></script>
     <script src="mocha.js"></script>
