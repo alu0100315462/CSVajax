@@ -23,7 +23,7 @@ suite('CSV', function() {
     test('Prueba en diferentes lineas', function() {
         original.value = 'prueba, en\ndiferentes\nlineas, "con , coma"';
         calculate();
-        assert.deepEqual(finaltable.innerHTML, '<p>\n</p><table class="center" id="result">\n<tbody><tr>                    <td>prueba1</td>              </tr>\n</tbody></table>')
+        assert.deepEqual(finaltable.innerHTML, '<p>\n</p><table class="center" id="result">\n<tbody><tr>                    <td>prueba</td>                                  <td> en</td>              </tr>\n<tr class="error">                    <td>diferentes</td>              </tr>\n<tr>                    <td>lineas</td>                                  <td>con , coma</td>              </tr>\n</tbody></table>')
     });
 
    test('Prueba almacenamiento web local', function(){
