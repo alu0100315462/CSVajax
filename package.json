@@ -1,0 +1,40 @@
+{
+  "name": "CSV",
+  "version": "1.0.0",
+  "description": "Representa cadenas de texto en una tabla. Los separadores son comas.",
+  "main": "csv.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alu0100315462/CSV.git"
+  },
+  "author": "Alvaro Suarez Chausson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0100315462/CSV/issues"
+  },
+  "homepage": "https://github.com/alu0100315462/CSV",
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "chai": "^2.1.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-karma": "0.0.4",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-minify-html": "^1.0.1",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-mocha": "^0.1.10",
+    "mocha": "^2.2.1"
+  }
+}
