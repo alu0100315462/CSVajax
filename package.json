@@ -18,6 +18,13 @@
   "bugs": {
     "url": "https://github.com/alu0100315462/CSV/issues"
   },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "keywords": [
+    "heroku",
+    "express"
+  ],
   "homepage": "https://github.com/alu0100315462/CSV",
   "devDependencies": {
     "blanket": "^1.1.6",
