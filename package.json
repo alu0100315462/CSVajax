@@ -19,7 +19,12 @@
     "url": "https://github.com/alu0100315462/CSV/issues"
   },
   "dependencies": {
-    "express": "~4.9.x"
+    "express": "~4.9.x",
+    "underscore": "*",
+    "ejs": "*",
+  },
+  "engines": {
+    "node": "0.10.x"
   },
   "keywords": [
     "heroku",
