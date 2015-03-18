@@ -19,10 +19,11 @@
     "url": "https://github.com/alu0100315462/CSV/issues"
   },
   "dependencies": {
-    "express": "~4.9.x",
-    "underscore": "*",
-    "ejs": "*",
-  },
+      "jquery": "*",
+      "underscore": "*",
+      "express": "*",
+      "ejs": "*",
+   },
   "engines": {
     "node": "0.10.x"
   },
