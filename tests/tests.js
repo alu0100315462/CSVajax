@@ -18,7 +18,7 @@ suite('CSV', function() {
     test('Test de tabla con error', function() {
         original.value = '1997,Ford,E350,"ac, abs, moon",3000.00 1999,Chevy,"Venture ""Extended Edition""","",4900.00 1999,Chevy,"Venture ""Extended Edition, Very Large""",,5000.00';
         calculate();
-        assert.isTrue(error, 'the tea has been served');        
+        assert.isTrue(calculate.error, 'the tea has been served');        
     });
     
     test('Test de tabla con un solo un elemento', function() {
