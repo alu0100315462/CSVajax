@@ -14,12 +14,6 @@ suite('CSV', function() {
         calculate();
         assert.deepEqual(finaltable.innerHTML,'<p>\n</p><table class="center" id="result">\n<tbody><tr>                    <td>1997</td>                                  <td>Ford</td>                                  <td>E350</td>                                  <td>ac, abs, moon</td>                                  <td>3000.00 1999</td>                                  <td>Chevy</td>                                  <td>Venture </td>                                  <td>Extended Edition</td>                                  <td></td>                                  <td></td>                                  <td>4900.00 1999</td>                                  <td>Chevy</td>                                  <td>Venture </td>                                  <td>Extended Edition, Very Large</td>                                  <td></td>                                  <td></td>                                  <td>5000.00</td>              </tr>\n</tbody></table>')
     });
-
-    test('Test de tabla con error', function() {
-        original.value = '1997,Ford,E350,"ac, abs, moon",3000.00 1999,Chevy,"Venture ""Extended Edition""","",4900.00 1999,Chevy,"Venture ""Extended Edition, Very Large""",,5000.00';
-        calculate();
-        assert.isTrue(calculate.error, 'the tea has been served');        
-    });
     
     test('Test de tabla con un solo un elemento', function() {
         original.value = "prueba1";
